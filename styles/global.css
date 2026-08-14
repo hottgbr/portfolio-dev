@@ -35,16 +35,7 @@ a {
   color:inherit;
 }
 
-#intro {
-  display: flex;
-  background-image: url(../assets/images/Background_Intro.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
+
 
 #avatar {
   position: relative;
@@ -76,14 +67,6 @@ a {
   z-index: 2;
 }
 
-#intro header {
-  margin: 120px 0 80px 0;
-}
-
-header strong {
-  font: inherit;
-}
-
 #arrow-down {
   appearance: none;
   border: none;
@@ -105,26 +88,6 @@ header strong {
 #introduction-text {
   justify-self:center;
   margin-bottom: 8px;
-}
-
-header h2 {
-  color: var(--gray-200);
-}
-#intro h1 {
-  font: var(--title-lg);
-  color: var(--gray-100);
-  align-self: center;
-  justify-self: center;
-  margin-bottom: 8px;
-}
-
-#intro p {
-  font: var(--text-sm);
-  color: var(--gray-300);
-  width: 580px;
-  height: 40px;
-  text-align: center;
-  align-items: center;
 }
 
 #tags ul{
@@ -213,28 +176,3 @@ header h2 {
   background-color: var(--main-green);
 }
 
-#projects {
-  background-color:var(--gray-500);
-  padding-top: 72px;
-  padding-bottom: 60px;
-}
-
-#projects header {
-  text-align: center;
-  width: 1040px;
-  margin: 0 auto;
-}
-
-#projects img {
-  margin-bottom: 20px;
-}
-
-#projects ul {
-  justify-self: center;
-  margin: 56px 163px 144px 163px;
-}
-
-#projects ul p {
-  margin-top: 8px;
-  margin-bottom: 5px;
-}

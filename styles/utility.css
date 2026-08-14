@@ -17,6 +17,13 @@
   gap: 24px;
 }
 
+.services-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -52,6 +59,21 @@
     border-radius: 8px;
     object-fit: cover;
   }
+  p,h3 {
+    padding: 0 6px 0 6px;
+  }
+}
+
+.service-card {
+  border: 2px solid var(--gray-500);
+  width: 280px;
+  height: 155px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.project-card:hover {
+  border: 2px solid var(--gray-300);
 }
 .grid-flow-cols-6 {
   grid-auto-flow: repeat(6, 1fr);
@@ -98,5 +120,5 @@
 }
 
 .gray-200 {
-  color: var(--gray-100);
+  color: var(--gray-200);
 }
