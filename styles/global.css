@@ -75,8 +75,11 @@ ul {
   z-index: 2;
 }
 
-
-
+#projects,
+#services,
+#contact {
+  padding-top: 88px;
+}
 #introduction-text {
   justify-self:center;
   margin-bottom: 8px;
