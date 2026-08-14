@@ -24,8 +24,16 @@
   gap: 24px;
 }
 
+.contact-grid {
+  grid-template-columns: 28px 1fr 20px;
+}
+
 .min-h-screen {
   min-height: 100vh;
+}
+
+.half-h-screen {
+  min-height: 50vh;
 }
 
 .tech-icon {
@@ -72,8 +80,94 @@
   border-radius: 12px;
 }
 
+.contact-card {
+  width: 400px;
+  height: 68px;
+  background-color: var(--gray-400);
+  border-radius: 8px;
+}
+
+.contact-card a {
+  width: 100%;
+  height: 100%;
+
+  align-items: center;
+  gap: 12px;
+
+  padding: 0 20px;
+
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.contact-card:hover {
+  background-color: var(--gray-600);
+  border: 1px solid var(--gray-100);
+}
+.arrow-down {
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+
+  width: 32px;
+  height: 32px;
+
+  transform: translateX(-50%);
+
+  background-color: var(--gray-300);
+
+  mask: url("../assets/icons/Vector.svg") center / contain no-repeat;
+  -webkit-mask: url("../assets/icons/Vector.svg") center / contain no-repeat;
+
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.2s;
+}
+
+.arrow-down.arrow-up {
+  transform: translateX(-50%) rotate(180deg);
+}
+
+.arrow-down:hover {
+  background-color: #b0b1b4;
+}
+
+.diagonal-arrow {
+  width: 20px;
+  height: 20px;
+  mask-image: url(../assets/icons/ArrowUpRight.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  cursor: pointer;
+  background-color: var(--main-blue);
+}
+.social-button {
+  display: block;
+
+  width: 28px;
+  height: 28px;
+  background-color: var(--gray-300);
+  cursor: pointer;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+}
+
 .project-card:hover {
   border: 2px solid var(--gray-300);
+}
+
+.service-card:hover {
+  border: 1px solid var(--gray-200);
 }
 .grid-flow-cols-6 {
   grid-auto-flow: repeat(6, 1fr);

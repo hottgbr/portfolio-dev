@@ -94,3 +94,30 @@
   justify-self: center;
 }
 
+/* Contact */
+#contact {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../assets/images/Background_Contacts.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#contact header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+#contact ul {
+  list-style: none;
+}
+
+.contact-card + .contact-card {
+  margin-top: 16px;
+}

@@ -35,7 +35,15 @@ a {
   color:inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 #avatar {
   position: relative;
@@ -49,8 +57,8 @@ a {
 }
 
 .profile-pic {
-  width: 82.27px;
-  height: 82.27px;
+  width: 90px;
+  height: 90px;
   object-fit: cover;
   border: 2px solid var(--main-red);
   border-radius: 9999px;
@@ -67,23 +75,7 @@ a {
   z-index: 2;
 }
 
-#arrow-down {
-  appearance: none;
-  border: none;
-  display: flex;
-  margin: auto 0 57px 0;
-  width: 32px;
-  height: 32px;
-  align-self: center;
-  mask: url("../assets/icons/Vector.svg") no-repeat center;
-  mask-size: contain;
-  background-color: #C0C4CE;
-}
 
-#arrow-down:hover {
-  background-color: #b0b1b4;
-  cursor: pointer;
-}
 
 #introduction-text {
   justify-self:center;
@@ -176,3 +168,30 @@ a {
   background-color: var(--main-green);
 }
 
+#linkedin-logo {
+  mask-image: url("../assets/icons/LinkedinLogo.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+#instagram-logo {
+  mask-image: url("../assets/icons/InstagramLogo.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+#github-logo {
+  mask-image: url("../assets/icons/GithubLogo.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+#email-logo {
+  mask-image: url("../assets/icons/EnvelopeSimple.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
