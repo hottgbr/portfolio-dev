@@ -14,56 +14,92 @@
 
 </head>
 <body>
-  <section id="intro">
+  <section id="intro" class="flex-flow-col min-h-screen">
     <header>
       <div id="avatar">
-        <img src="assets/images/profile-pic.jpeg" alt="">
-        <img src="assets/icons/Code.svg" alt="code symbol">
+        <img src="assets/images/profile-pic.jpeg" alt="profile picture" class="profile-pic">
+        <img src="assets/icons/Code.svg" alt="code symbol" class="small-icon">
       </div>
-      <h2>Hello World! My name is <strong>Gabriell Hott</strong> and I'm a</h2>
+      <h2 id="introduction-text"class="subtitle">Hello World! My name is <strong class="color-red">Gabriell Hott</strong> and I'm a</h2>
       <h1>Fullstack Developer</h1>
       <p>I turn complex business requirements into reliable, maintainable software, bridging the gap between technical decisions and real-world needs.</p>
     </header>
     <div id="tags">
-      <ul>
-        <li id="github">
-          <img src="assets/icons/GitHub.svg" alt="Github Icon">
-          <span>GitHub</span>
+      <ul class="grid grid-flow-cols-6">
+        <li class="tech-icon">
+          <span class="github-icon"></span>
+          <span class="icon-text">GitHub</span>
         </li>
-        <li id="html">
-          <img src="assets/icons/HTML.svg" alt="HTML Icon">
-          <span>HTML</span>
+        <li class="tech-icon">
+          <span class="html-icon"></span>
+          <span class="icon-text">HTML</span>
         </li>
-        <li id="css">
-          <img src="assets/icons/CSS.svg" alt="CSS Icon">
-          <span>CSS</span>
+        <li class="tech-icon"> 
+          <span class="css-icon"></span>
+          <span class="icon-text">CSS</span>
         </li>
-        <li id="javascript">
-          <img src="assets/icons/JavaScript.svg" alt="Javascript Icon">
-          <span>Javascript</span>
+        <li class="tech-icon">
+          <span class="javascript-icon"></span>
+          <span class="icon-text">Javascript</span>
         </li>
-        <li id="react">
-          <img src="assets/icons/React.svg" alt="React Icon">
-          <span>React</span>
+        <li class="tech-icon">
+          <span class="react-icon"></span>
+          <span class="icon-text">React</span>
         </li>
-        <li id="nodejs">
-          <img src="assets/icons/Node.js.svg" alt="Node.js Icon">
-          <span>Node.js</span>
+        <li class="tech-icon">
+          <span class="nodejs-icon"></span>
+          <span class="icon-text">Node.js</span>
         </li>
       </ul>
     </div>
     <button id="arrow-down"></button>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="min-h-screen">
+    <header>
+      <span class="color-red subtitle">My work</h2>
+      <h2 class="title-md">Explore my featured projects</h1>
+    </header>
+    <ul class="projects-grid">
+      <li class="project-card">
+        <img src="assets/images/Thumbnail_Project-01.png" alt="Travelgram Project">
+        <h3 class="title-sm gray-100">Travelgram</h3>
+        <p class="text-sm gray-200">A social network where people share records of their travels around the world</p>
+      </li>
+      <li class="project-card">
+        <img src="assets/images/Thumbnail_Project-02.png" alt="Tech News Project">
+        <h3 class="title-sm gray-100">Tech News</h3>
+        <p class="text-sm gray-200">Homepage of a news portal focused on technology</p>
+      </li>
+      <li class="project-card">
+        <img src="assets/images/Thumbnail_Project-03.png" alt="Recipe Page Project">
+        <h3 class="title-sm gray-100">Recipe Page</h3>
+        <p class="text-sm gray-200">Step-by-step recipe page for cupcakes</p>
+      </li>
+      <li class="project-card">
+        <img src="assets/images/Thumbnail_Project-04.png" alt="Zingen Project">
+        <h3 class="title-sm gray-100">Zingen</h3>
+        <p class="text-sm gray-200">Complete and responsive Karaoke App landing page</p>
+      </li>
+      <li class="project-card">
+        <img src="assets/images/Thumbnail_Project-05.png" alt="Refund Project">
+        <h3 class="title-sm gray-100">Refund</h3>
+        <p class="text-sm gray-200">A system for submitting and tracking refund requests</p>
+      </li>
+      <li class="project-card">
+        <img src="assets/images/Thumbnail_Project-06.png" alt="Tourism Page Project">
+        <h3 class="title-sm gray-100">Tourism Page</h3>
+        <p class="text-sm gray-200">A page featuring key information for travelers visiting Busan</p>
+      </li>
+    </ul>
 
   </section>
 
-  <section id="services">
+  <section id="services" class="min-h-screen">
 
   </section>
 
-  <section id="contact">
+  <section id="contact" class="min-h-screen">
 
   </section>
 </body>

@@ -34,3 +34,207 @@ a {
   text-decoration: none;
   color:inherit;
 }
+
+#intro {
+  display: flex;
+  background-image: url(../assets/images/Background_Intro.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#avatar {
+  position: relative;
+  width: 112px;
+  height: 112px;
+
+  display: flex;
+  justify-self:center;
+
+  margin-bottom: 64px;
+}
+
+.profile-pic {
+  width: 82.27px;
+  height: 82.27px;
+  object-fit: cover;
+  border: 2px solid var(--main-red);
+  border-radius: 9999px;
+  z-index: 1;
+  padding: 4px;
+}
+
+.small-icon {
+  position: absolute;
+  width: 31px;
+  height: 25px;
+  right: 25px;
+  bottom: 27px;
+  z-index: 2;
+}
+
+#intro header {
+  margin: 120px 0 80px 0;
+}
+
+header strong {
+  font: inherit;
+}
+
+#arrow-down {
+  appearance: none;
+  border: none;
+  display: flex;
+  margin: auto 0 57px 0;
+  width: 32px;
+  height: 32px;
+  align-self: center;
+  mask: url("../assets/icons/Vector.svg") no-repeat center;
+  mask-size: contain;
+  background-color: #C0C4CE;
+}
+
+#arrow-down:hover {
+  background-color: #b0b1b4;
+  cursor: pointer;
+}
+
+#introduction-text {
+  justify-self:center;
+  margin-bottom: 8px;
+}
+
+header h2 {
+  color: var(--gray-200);
+}
+#intro h1 {
+  font: var(--title-lg);
+  color: var(--gray-100);
+  align-self: center;
+  justify-self: center;
+  margin-bottom: 8px;
+}
+
+#intro p {
+  font: var(--text-sm);
+  color: var(--gray-300);
+  width: 580px;
+  height: 40px;
+  text-align: center;
+  align-items: center;
+}
+
+#tags ul{
+  list-style:none;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+}
+
+.github-icon {
+  display: inline-block;
+
+  width: 24px;
+  height: 24px;
+
+  mask-image: url("../assets/icons/GitHub.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+
+  background-color: var(--gray-200);
+}
+
+.html-icon {
+  display: inline-block;
+
+  width: 24px;
+  height: 24px;
+
+  mask-image: url("../assets/icons/HTML.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+
+  background-color: var(--main-red);
+}
+.css-icon {
+  display: inline-block;
+
+  width: 24px;
+  height: 24px;
+
+  mask-image: url("../assets/icons/CSS.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+
+  background-color: var(--main-blue);
+}
+.javascript-icon {
+  display: inline-block;
+
+  width: 24px;
+  height: 24px;
+
+  mask-image: url("../assets/icons/JavaScript.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+
+  background-color: var(--main-yellow);
+}
+.react-icon {
+  display: inline-block;
+
+  width: 24px;
+  height: 24px;
+
+  mask-image: url("../assets/icons/React.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+
+  background-color: var(--main-blue);
+}
+.nodejs-icon {
+  display: inline-block;
+
+  width: 24px;
+  height: 24px;
+
+  mask-image: url("../assets/icons/Node.js.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+
+  background-color: var(--main-green);
+}
+
+#projects {
+  background-color:var(--gray-500);
+  padding-top: 72px;
+  padding-bottom: 60px;
+}
+
+#projects header {
+  text-align: center;
+  width: 1040px;
+  margin: 0 auto;
+}
+
+#projects img {
+  margin-bottom: 20px;
+}
+
+#projects ul {
+  justify-self: center;
+  margin: 56px 163px 144px 163px;
+}
+
+#projects ul p {
+  margin-top: 8px;
+  margin-bottom: 5px;
+}

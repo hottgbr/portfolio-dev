@@ -2,10 +2,65 @@
   display:grid;
 }
 
+.flex-flow-col{
+  flex-direction: column;
+}
+
 .grid-flow-col {
   grid-auto-flow: column;
 }
 
+.projects-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.tech-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--gray-400);
+  border-radius: 999px;
+  min-width: 114px;
+  width: fit-content;
+  height: 40px;
+  img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+
+  }
+}
+
+.project-card {
+  width: 330px;
+  height: 280px;
+  background-color: var(--gray-400);
+  border-radius: 12px;
+  padding: 12px;
+  img {
+    width:100%;
+    aspect-ratio: 306/156;
+    flex-shrink: 0;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+}
+.grid-flow-cols-6 {
+  grid-auto-flow: repeat(6, 1fr);
+}
+
+.icon-text { 
+  font: var(--text-md);
+  color: var(--gray-200);
+}
 .title-lg {
   font:var(--title-lg);
 }
@@ -28,4 +83,20 @@
 
 .text-sm {
   font:var(--text-sm);
+}
+
+.color-red { 
+  color: var(--main-red);
+}
+
+.color-purple { 
+  color: var(--main-purple);
+}
+
+.gray-100 {
+  color: var(--gray-100);
+}
+
+.gray-200 {
+  color: var(--gray-100);
 }
