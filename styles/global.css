@@ -51,8 +51,9 @@ ul {
   height: 112px;
 
   display: flex;
-  justify-self:center;
-
+  justify-content:center;
+  align-items: center;
+  margin-inline: auto;
   margin-bottom: 64px;
 }
 
@@ -70,8 +71,8 @@ ul {
   position: absolute;
   width: 31px;
   height: 25px;
-  right: 25px;
-  bottom: 27px;
+  right: 7px;
+  bottom: 10px;
   z-index: 2;
 }
 
