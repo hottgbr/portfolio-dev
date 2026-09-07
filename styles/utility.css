@@ -66,6 +66,8 @@
   border-radius: 12px;
   padding: 12px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card > a {
@@ -78,7 +80,7 @@
 .project-card img {
   display: block;
   width: 100%;
-  aspect-ratio: 306/156;
+  height: 156px;
   flex-shrink: 0;
   border-radius: 8px;
   object-fit: cover;
@@ -91,6 +93,9 @@
 
 .project-card h3 {
   margin-top: 12px;
+  min-height: 24px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .project-card p {
