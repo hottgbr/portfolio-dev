@@ -87,8 +87,11 @@ ul {
 }
 
 #tags ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   list-style:none;
-  grid-template-columns: repeat(6, 1fr);
   gap: 16px;
 }
 
