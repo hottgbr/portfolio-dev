@@ -46,18 +46,21 @@
   min-width: 114px;
   width: fit-content;
   height: 40px;
+  padding-inline: 16px;
+  white-space: nowrap;
 }
 
 .tech-icon img {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   flex-shrink: 0;
+  object-fit: contain;
 }
 
 .project-card {
   width: 330px;
   min-height: 350px;
-  height: 100%;
+  height: auto;
   background-color: var(--gray-400);
   border: 2px solid transparent;
   border-radius: 12px;
@@ -83,24 +86,31 @@
 
 .project-card h3,
 .project-card p {
-  padding-inline: 6px;
+  padding-inline: 10px;
 }
 
 .project-card h3 {
-  margin-top: 0;
+  margin-top: 12px;
 }
 
 .project-card p {
   flex: 1;
+  margin-top: 8px;
+  padding-bottom: 10px;
   line-height: 140%;
 }
 
 .service-card {
   border: 2px solid var(--gray-500);
   width: 280px;
-  height: 155px;
+  min-height: 175px;
+  height: auto;
   padding: 20px;
   border-radius: 12px;
+}
+
+.service-card p {
+  margin-top: 8px;
 }
 
 .contact-card {
